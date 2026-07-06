@@ -11,7 +11,7 @@ genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 # gemini-2.5-pro requires a paid Google Cloud billing account (Pro models were
 # removed from the free tier). gemini-2.5-flash is still free-tier eligible
 # and works well for this kind of structured extraction task.
-GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-2.5-flash')
+GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-3.1-flash-lite')
 model = genai.GenerativeModel(GEMINI_MODEL)
 
 # ---------------------------------------------------------------------------
